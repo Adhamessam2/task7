@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:task7/home/widgets/navbar_items.dart';
 import 'package:task7/home/widgets/offers_products.dart';
 import 'package:task7/home/widgets/slider.dart';
 
@@ -33,33 +32,14 @@ class MyHomePage extends StatelessWidget {
                 prefixIcon: Icon(Icons.search, color: Colors.red),
               ),
             ),
-            SizedBox(height: 8),
+            SizedBox(height: 12),
             OffersProducts(),
             Text(
               "Featured items",
               style: TextStyle(fontSize: 20, fontWeight: .bold),
             ),
-            SizedBox(height: 10),
-            CarouselViewToggle(),
-          ],
-        ),
-      ),
-      bottomNavigationBar: BottomAppBar(
-        color: Colors.white,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: const [
-            NavItem(icon: Icons.home, label: 'Home', color: Colors.red),
-            NavItem(
-              icon: Icons.shopping_cart,
-              label: 'Cart',
-              color: Colors.grey,
-            ),
-            NavItem(
-              icon: Icons.person_outline,
-              label: 'Profile',
-              color: Colors.grey,
-            ),
+            SizedBox(height: 16),
+            const CarouselViewToggle(),
           ],
         ),
       ),
